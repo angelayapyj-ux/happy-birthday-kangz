@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Happy Birthday Kangzie!</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="birthday-card">
+  <div class="cake">🎂</div>
+
+  <p class="small-heading">
+    A tiny corner of the internet just for you
+  </p>
+
+  <h1>Happy Birthday Kangzie!</h1>
+
+  <p id="message">
+    I made you a little birthday surprise.
+  </p>
+
+  <button id="messageButton" type="button">
+    Open your birthday message
+  </button>
+
+  <p class="counter" id="counter"></p>
+
+<button
+  id="cameraButton"
+  class="memory-polaroid"
+  type="button"
+  aria-label="Open photo memories"
+>
+  <span class="paper-clip">📎</span>
+
+  <span class="memory-photo-area">
+    <span class="camera-icon">📷</span>
+  </span>
+
+  <span class="memory-caption">
+    Click here for memories
+  </span>
+</button>
+</div>
+
+<!-- Single-photo memory viewer -->
+<div id="photoOverlay" class="photo-overlay">
+  <div class="photo-viewer">
+
+    <button
+      id="closePhotoViewer"
+      class="close-photo-viewer"
+      type="button"
+      aria-label="Close photo memories"
+    >
+      ×
+    </button>
+
+    <p class="photo-label">
+      A little flashback
+    </p>
+
+    <figure
+      id="polaroid"
+      class="single-polaroid"
+      title="Click the photo for the next memory"
+    >
+      <div class="flash"></div>
+
+      <img
+        id="memoryPhoto"
+        src="https://i.imgur.com/96FXWJH.jpeg"
+        alt="Birthday memory"
+      />
+
+      <figcaption id="memoryCaption">
+        Our first adventure together ♡
+      </figcaption>
+    </figure>
+
+    <p id="photoCounter" class="photo-counter">
+      1 of 4
+    </p>
+
+    <div class="photo-controls">
+      <button id="previousPhoto" type="button">
+        ← Previous
+      </button>
+
+      <button id="nextPhoto" type="button">
+        Next →
+      </button>
+    </div>
+
+    <p class="photo-hint">
+      Click the photograph to see the next memory.
+    </p>
+  </div>
+</div>
+
+<div id="confettiContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
